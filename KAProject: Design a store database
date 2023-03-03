@@ -1,0 +1,21 @@
+CREATE TABLE echo_parts (id INTEGER PRIMARY KEY, Part TEXT, Brand TEXT, Aisle INTEGER, Price INTEGER);
+
+INSERT INTO echo_parts VALUES (1, "Gel", "Sony", 1, 10);
+INSERT INTO echo_parts VALUES (2, "Trackball", "Sony", 2, 20);
+INSERT INTO echo_parts VALUES (3, "Monitor", "GE", 3, 55);
+INSERT INTO echo_parts VALUES (4, "Power Supply", "Sony", 4, 15);
+INSERT INTO echo_parts VALUES (5, "Pedi Probe", "Toshiba", 5, 95);
+INSERT INTO echo_parts VALUES (6, "TEE Probe", "Hitachi", 1, 95);
+INSERT INTO echo_parts VALUES (7, "Adult Probe", "Samsung", 2, 95);
+INSERT INTO echo_parts VALUES (8, "ECG Leads", "Sony", 3, 15);
+INSERT INTO echo_parts VALUES (9, "Memory", "GE", 1, 25);
+INSERT INTO echo_parts VALUES (10, "Power Cord", "Toshiba", 4, 5);
+INSERT INTO echo_parts VALUES (11, "Operator Panel", "Sony", 5, 35);
+INSERT INTO echo_parts VALUES (12, "Keyboard", "Hitachi", 1, 25);
+INSERT INTO echo_parts VALUES (13, "Probe Holder", "Samsung", 2, 15);
+INSERT INTO echo_parts VALUES (14, "Hard Drive", "Sony", 3, 35);
+INSERT INTO echo_parts VALUES (15, "Video Card", "GE", 4, 45);
+
+SELECT * FROM echo_parts ORDER BY Aisle;
+SELECT SUM(Price) FROM echo_parts;
+SELECT * FROM echo_parts WHERE Price < 25 ORDER BY Aisle;
